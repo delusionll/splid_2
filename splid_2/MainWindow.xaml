@@ -13,6 +13,7 @@
                 <DataGridTextColumn  IsReadOnly="False" Header="Sum"/>
                 <DataGridComboBoxColumn IsReadOnly="False" Header="By"/>
                 <DataGridComboBoxColumn IsReadOnly="False" Header="For"/>
+                <DataGridTextColumn  IsReadOnly="False" Header="Description"/>
                 
 
 
