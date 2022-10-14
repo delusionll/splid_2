@@ -5,8 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:splid_2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="SPLiD" Height="450" Width="800">
     <Grid>
+        <DataGrid x:Name="Splid" FontSize="14" FontWeight="Bold" FontFamily="Arial" Margin="20">
+            <DataGrid.Columns>
+                <DataGridTextColumn IsReadOnly="True" Header="CreationDate"/>
+                <DataGridTextColumn  IsReadOnly="False" Header="Sum"/>
+                <DataGridComboBoxColumn IsReadOnly="False" Header="By"/>
+                <DataGridComboBoxColumn IsReadOnly="False" Header="For"/>
+                
 
+
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>
