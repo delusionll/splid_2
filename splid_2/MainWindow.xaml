@@ -5,18 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:splid_2"
         mc:Ignorable="d"
-        Title="SPLiD" Height="450" Width="800">
+        Title="SPLiD" Height="666" Width="666">
     <Grid>
-        <DataGrid x:Name="Splid" FontSize="14" FontWeight="Bold" FontFamily="Arial" Margin="20">
+        <DataGrid x:Name="splidList" FontSize="14" FontWeight="Bold" FontFamily="Arial" Margin="10" SelectionChanged="Splid_SelectionChanged_1" Loaded="splidList_Loaded" AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn IsReadOnly="True" Header="CreationDate"/>
-                <DataGridTextColumn  IsReadOnly="False" Header="Sum"/>
+                <DataGridTextColumn Binding="{Binding Path = CreationDate}" IsReadOnly="True" Header="CreationDate"/>
+                <DataGridTextColumn Binding="{Binding Path= Sum}"  IsReadOnly="False" Header="Sum"/>
                 <DataGridComboBoxColumn IsReadOnly="False" Header="By"/>
                 <DataGridComboBoxColumn IsReadOnly="False" Header="For"/>
-                <DataGridTextColumn  IsReadOnly="False" Header="Description"/>
-                
-
-
+                <DataGridTextColumn Binding="{Binding Path = Description}"  IsReadOnly="False" Header="Description"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid Margin="372,341,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn IsReadOnly="True" Header ="User"/>
+                <DataGridTextColumn IsReadOnly="True" Header="Balance"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
